@@ -1,5 +1,5 @@
 FROM quay.io/arrowhacks/openjdk16:0.0.1
-RUN apk add curl
+RUN apt install curl
 
 COPY target/quarkus-app/lib/ /deployments/lib/
 COPY target/quarkus-app/*.jar /deployments/
